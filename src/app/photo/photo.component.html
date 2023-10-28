@@ -1,0 +1,7 @@
+<body class="background">
+    <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let photo of photos">
+          <img [src]="photo.url" alt="{{photo.alt}}">
+        </mat-grid-tile>
+    </mat-grid-list>
+</body>

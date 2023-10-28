@@ -1,0 +1,38 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+  }
+  
+  .text {
+    flex: 1; /* The text takes up all available space on the left */
+  }
+  
+  .image {
+    width: 550px; /* Adjust the width of the image as needed */
+  }
+  .font{
+    font-family: Merienda;
+  }
+
+  .background{
+    background-color: rgba(2, 4, 79, 0.224);
+  }
+  .text-accent{
+    color:red;
+  }
+  .linkedin-link {
+    text-decoration: none; /* Remove the default underline for links */
+  }
+  
+  .linkedin-logo {
+    width: 40px; /* Adjust the image width */
+    height: 40px; /* Adjust the image height */
+    margin-right: 10px;
+  }
+  .handwirttenfont{
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: underline;
+  }
+  

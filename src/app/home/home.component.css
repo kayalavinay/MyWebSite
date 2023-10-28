@@ -1,0 +1,51 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+  
+.text {
+flex: 1; /* The text takes up all available space on the left */
+}
+
+.image {
+width: 550px; /* Adjust the width of the image as needed */
+}
+.font{
+font-family: Merienda;
+}
+
+.background{
+background-color: rgba(11, 14, 174, 0.224);
+}
+.text-accent{
+color:red;
+}
+.linkedin-link {
+text-decoration: none; /* Remove the default underline for links */
+}
+
+.linkedin-logo {
+width: 40px; /* Adjust the image width */
+height: 40px; /* Adjust the image height */
+margin-right: 10px;
+}
+.margin{
+margin-right: 10px;;
+}
+.hover a:hover{
+transform: scale(1.2); /* Makes the icon and text 20% larger */
+color: blue;
+}
+.hover-icon {
+font-size: 24px;
+
+transition: transform 0.2s, color 0.2s; /* Add smooth transitions */
+
+cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+.hover-icon:hover {
+transform: scale(1.2); /* Enlarge the icon by 20% on hover */
+color:blue; /* Change the color to red on hover (adjust the color as needed) */
+}

@@ -1,0 +1,280 @@
+
+<style>
+
+body {font-family: Arial,Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+#section-left {
+    overflow:hidden;
+}
+#section-right {
+    width:300px;
+    margin-left:30px;
+    float:left;
+}
+	.scrollbar-auto {
+      height: 170px; /* Set the desired height of the container */
+      overflow: auto; /* Add scrollbar when content exceeds container height */
+    }
+	.scrollbar-auto {
+	  <!-- height: 170px; /* Set the desired height of the container */ -->
+      <!-- overflow: auto; /* Add scrollbar when content exceeds container height */ -->
+      border: 1px solid #ccc; /* Add a border to the container */
+      <!-- padding: 10px; /* Add padding for spacing */ -->
+      border-radius: 5px; /* Add rounded corners */
+    }
+
+    .scrollbar-auto ul {
+      list-style: none; /* Remove default list styles */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    .scrollbar-auto li {
+      padding: 5px; /* Add padding for spacing between list items */
+    }
+
+    /* Customize scrollbar styles */
+    .scrollbar-auto::-webkit-scrollbar {
+      width: 10px; /* Set the width of the scrollbar */
+    }
+
+    .scrollbar-auto::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Set the background color of the scrollbar track */
+    }
+
+    .scrollbar-auto::-webkit-scrollbar-thumb {
+      background: #888; /* Set the color of the scrollbar thumb */
+      border-radius: 5px; /* Add rounded corners to the scrollbar thumb */
+    }
+
+    .scrollbar-auto::-webkit-scrollbar-thumb:hover {
+      background: #555; /* Set the color of the scrollbar thumb on hover */
+    }
+	
+	.search-container {
+      text-align: center;
+    }
+
+    .search-input {
+      padding: 10px;
+      font-size: 16px;
+      width: 300px; /* Adjust the width as desired */
+    }
+</style>
+
+<body style="background-image: url('images.jpg');background-repeat: no-repeat; background-size: cover; ">
+	<script>
+		function myFunction() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("myUL");
+			li = ul.getElementsByTagName("section");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("h4")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+	</script>
+	
+	<div class="search-container" >
+		<center>
+			<input type="text" id="myInput" class="search-input" style="background-image: url('searchImage.jpg');background-repeat: no-repeat; background-size: cover; "  onkeyup="myFunction()" placeholder="Search for categories.." title="Type in a name">
+			<!-- <button onclick="myFunction()"> Search</button> -->
+		</center>
+	</div>
+	<br>
+	<div id="myUL">
+		<section id = section-right>
+			<div  >
+				<div class="category-block categories">
+					<div class="header">
+						<i class="fa fa-cutlery icon-bg-3"></i> 
+						<h4><center>Schools</center></h4>
+					</div>
+					<ul class="category-list" >
+						<div class="scrollbar-auto">
+							<li><a href="Chaitanya.html">Chaitanya </a></li>
+							<li><a href="Narayana.html">Narayana </a></li>
+							<li><a href="Aditya.html">Aditya </a></li>
+							<li><a href="Pragathi.html">Pragathi  </a></li>
+							<li><a href="Surya.html">Surya </a></li>
+							<li><a href="Likitha.html">Likitha </a></li>
+							<li><a href="Vignan.html">Vignan </a></li>
+							<li><a href="Gayatri.html">Gayatri </a></li>
+							<li><a href="Surya.html">Surya </a></li>
+							<li><a href="Akshaya.html">Akshaya </a></li>
+							<li><a href="Thirumala.html">Thirumala </a></li>
+							<li><a href="Sasi.html">Sasi </a></li>
+						</div>
+					</ul>
+				</div>
+			</div> 
+
+		</section>	
+		<section id = section-right>
+			<div>
+				<div class="category-block categories">
+					<div class="header">
+						<i class="fa fa-cutlery icon-bg-3"></i> 
+						<h4><center>Colleges</center></h4>
+					</div>
+					<ul class="category-list" >
+						<div class="scrollbar-auto">
+							<li><a href="Aditya.html">Aditya </a></li>
+							<li><a href="Kits.html">Kits </a></li>
+							<li><a href="Rise.html">Rise </a></li>
+							<li><a href="Pragathi.html">Pragathi </a></li>
+							<li><a href="Pace.html">Pace </a></li>
+							<li><a href="Kiet.html">Kiet </a></li>
+							<li><a href="Giet.html">Giet </a></li>
+							<li><a href="Riet.html">Riet </a></li>
+							<li><a href="JntuKakinada.html">JntuKakinada </a></li>
+							<li><a href="AndhraUniversity.html">AndhraUniversity </a></li>
+							<li><a href="SwarnaAndhra.html">SwarnaAndhra </a></li>
+							<li><a href="AdiKaviUniversity.html">AdiKaviUniversity </a></li>
+						</div>
+					</ul>
+				</div>
+			</div> 
+		</section>
+		<section id = section-right>
+			<div>
+				<div class="category-block categories">
+					<div class="header">
+						<i class="fa fa-cutlery icon-bg-3"></i> 
+						<h4><center>Comapnies</center></h4>
+					</div>
+					<ul class="category-list" >
+						<div class="scrollbar-auto">
+							<li><a href="TollPlus.html">TollPlus </a></li>
+							<li><a href="ViaPlus.html">ViaPlus </a></li>
+							<li><a href="Vinci.html">Vinci </a></li>
+							<li><a href="Google.html">Google </a></li>
+							<li><a href="Amazon.html">Amazon </a></li>
+							<li><a href="Tcs.html">Tcs </a></li>
+							<li><a href="Deloitte.html">Deloitte </a></li>
+							<li><a href="CapGemini.html">CapGemini </a></li>
+							<li><a href="Infosys.html">Infosys </a></li>
+							<li><a href="MindTree.html">MindTree </a></li>
+							<li><a href="Microsoft.html">Microsoft </a></li>
+							<li><a href="FlipKart.html">FlipKart </a></li>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+		<section id = section-right>
+			<div>
+				<div class="category-block categories">
+					<div class="header">
+						<i class="fa fa-cutlery icon-bg-3"></i> 
+						<h4><center>Shopping</center></h4>
+					</div>
+					<ul class="category-list" >
+						<div class="scrollbar-auto">
+							<li><a href="FlipKart.html">FlipKart </a></li>
+							<li><a href="Amazon.html">Amazon </a></li>
+							<li><a href="Myntra.html">Myntra </a></li>
+							<li><a href="Meeshow.html">Meeshow </a></li>
+							<li><a href="Yahoo.html">Yahoo </a></li>
+							<li><a href="Ekart.html">Ekart </a></li>
+							<li><a href="Swiggy.html">Swiggy </a></li>
+							<li><a href="Zomato.html">Zomato </a></li>
+							<li><a href="CountryDelight.html">CountryDelight </a></li>
+							<li><a href="InstaMart.html">InstaMart </a></li>
+							<li><a href="Zahoo.html">Zahoo </a></li>
+							<li><a href="Zepto.html">Zepto </a></li>
+						</div>
+					</ul>
+				</div>
+			</div> 
+
+		</section>
+		<section id = section-right>
+			<div>
+				<div class="category-block categories">
+					<div class="header">
+						<i class="fa fa-cutlery icon-bg-3"></i> 
+						<h4><center>SocialMedia</center></h4>
+					</div>
+					<ul class="category-list" >
+						<div class="scrollbar-auto">
+							<li><a href="WhatsApp.html">WhatsApp </a></li>
+							<li><a href="Instagram.html">Instagram </a></li>
+							<li><a href="FaceBook.html">FaceBook </a></li>
+							<li><a href="Twitter.html">Twitter </a></li>
+							<li><a href="Threads.html">Threads </a></li>
+							<li><a href="telegram.html">telegram </a></li>
+							<li><a href="TikTok.html">TikTok </a></li>
+							<li><a href="SnapChat.html">SnapChat </a></li>
+							<li><a href="Moj.html">Moj </a></li>
+							<li><a href="Tinder.html">Tinder </a></li>
+							<li><a href="Messenger.html">Messenger </a></li>
+							<li><a href="LinkedIn.html">LinkedIn </a></li>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+		<section id = section-right>
+			<div>
+				<div class="category-block categories">
+					<div class="header">
+						<i class="fa fa-cutlery icon-bg-3"></i> 
+						<h4><center>Temples</center></h4>
+					</div>
+					<ul class="category-list" >
+						<div class="scrollbar-auto">
+							<li><a href="KaniPakam.html">KaniPakam </a></li>
+							<li><a href="Thirupathi.html">Thirupathi </a></li>
+							<li><a href="Vijayawada.html">Vijayawada </a></li>
+							<li><a href="Pitapuram.html">Pitapuram </a></li>
+							<li><a href="Kerala.html">Kerala </a></li>
+							<li><a href="Kedarnath.html">Kedarnath </a></li>
+							<li><a href="Badrinath.html">Badrinath </a></li>
+							<li><a href="Jagannath.html">Jagannath </a></li>
+							<li><a href="GoldenTemple.html">GoldenTemple </a></li>
+							<li><a href="SriKalaHasthi.html">SriKalaHasthi </a></li>
+							<li><a href="Rameswaram.html">Rameswaram </a></li>
+							<li><a href="YedagriGutta.html">YedagriGutta </a></li>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+		<section id = section-right>
+			<div>
+				<div class="category-block categories">
+					<div class="header">
+						<i class="fa fa-cutlery icon-bg-3"></i> 
+						<h4><center>WaterFalls</center></h4>
+					</div>
+					<ul class="category-list" >
+						<div class="scrollbar-auto">
+							<li><a href="MareduMilli.html">MareduMilli </a></li>
+							<li><a href="RampaChodavaram.html">RampaChodavaram </a></li>
+							<li><a href="Koyyuru.html">koyyuru </a></li>
+							<li><a href="Darapalli.html">Darapalli </a></li>
+							<li><a href="Yerakalapalem.html">Yerakalapalem </a></li>
+							<li><a href="Saragadu.html">Saragadu </a></li>
+							<li><a href="Darakonda.html">Darakonda </a></li>
+							<li><a href="KDPeta.html">KDPeta </a></li>
+							<li><a href="Rajavammangi.html">Rajavammangi </a></li>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+	</div>
+</body>
